@@ -1,0 +1,110 @@
+#contenedor-perros {
+    padding-top:1vh;
+    padding-bottom:1vh;
+    margin-top: 19vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 20px solid #6DCCAA;
+    margin-left: 1vw;
+    margin-right: 0.1vw;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #6DCCAA;
+}
+
+#contenedor-perros2 {
+    display: flex;
+    padding-top:1vh;
+    padding-bottom:1vh;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 20px solid #6DCCAA;
+    margin-left: 1vw;
+    margin-right: 0.1vw;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #6DCCAA;    
+}
+
+#estadoperri {
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-top: 1vh;
+    margin-left: 3vw;
+    margin-bottom: 3vh;
+    text-shadow: 1px 1px 2px #00000031;
+}
+
+#perrodiv {
+    box-shadow: 4px 4px 6px #00000023;
+    margin: 10px;
+    transition: all .4s ease;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #ffffff
+}
+
+#perrodiv:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 6px #00000023;
+}
+
+#nombre {
+    text-decoration: none;
+    text-align: center;
+    color: #1d1d1d;
+}
+
+#perrobd {
+    margin-top: 16px;
+}
+
+#raza{
+    font-style: oblique;
+}
+
+/**/
+
+/**/
+
+@media screen and (max-width: 992px) {
+    #contenedor-perros {
+        margin-top: 32vh;
+        margin-left: 2vw;
+    }
+    #contenedor-perros2 {
+        margin-left: 2vw;
+    }
+    .box{
+        width: 70%;
+    }
+    .popup{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #contenedor-perros {
+        margin-top: 2vh;
+        margin-left: 3vw;
+    }
+    #contenedor-perros2 {
+        margin-left: 3vw;
+    }
+    #estadoperri {
+        text-align: center;;
+    }
+    #perrodiv:hover {
+        -ms-transform: scale(1.01); /* IE 9 */
+        -webkit-transform: scale(1.01); /* Safari 3-8 */
+        transform: scale(1.01);
+        box-shadow: 0px 0px 20px 6px #00000023;
+    }
+    .box{
+        width: 90%;
+    }
+    .popup{
+        width: 90%;
+    }
+}

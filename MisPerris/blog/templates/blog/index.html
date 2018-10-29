@@ -1,0 +1,212 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="es-cl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'fonts/fontstyle.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flexboxgrid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slider.css' %}">
+    <link rel="stylesheet" href="{% static 'fancybox/dist/jquery.fancybox.css' %}">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'fancybox/dist/jquery.fancybox.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png' %}">
+    <title>Mis Perris - Inicio</title>
+</head>
+
+<body id="index">
+
+    <section id="container" class="container-fluid">
+
+        <header class="row">
+
+            <div class="col-xs-12 col-md-6">
+                <div class="logo">
+                    <img id="logo" src="{% static 'img/logo.png' %}" alt="mis perris">
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-6">
+                <nav id="menu" class="row">
+                    <a class="col-xs-12 col-sm-3" href="#index">Inicio</a>
+                    <a class="col-xs-12 col-sm-3" href="#slogan">Quiénes somos</a>
+                    <a class="col-xs-12 col-sm-3" href="{% url 'form' %}">Registro</a>
+                    <a class="col-xs-12 col-sm-3" href="{% url 'perros' %}">Perris</a>
+                </nav>
+            </div>
+
+        </header>
+
+        <section id="section" class="row">
+
+            <div id="carrusel" class="col-xs-12">
+
+                <div class="s-wrap s-type-1" role="slider">
+                    <input type="radio" id="s-1" name="slider-control" checked="checked">
+                    <input type="radio" id="s-2" name="slider-control">
+                    <input type="radio" id="s-3" name="slider-control">
+                    <ul class="s-content">
+                        <li class="s-item s-item-1">asds</li>
+                        <li class="s-item s-item-2">fdss</li>
+                        <li class="s-item s-item-3"> <p>asdf</p>  </li>
+                    </ul>
+                    <div class="s-control">
+                        <label class="s-c-1" for="s-1"></label>
+                        <label class="s-c-2" for="s-2"></label>
+                        <label class="s-c-3" for="s-3"></label>
+                    </div>
+                    <div class="s-nav">
+                        <label class="s-nav-1 left" for="s-3"></label>                          
+                        <label class="s-nav-1 right" for="s-2"></label>
+                        <label class="s-nav-2 left" for="s-1"></label>
+                        <label class="s-nav-2 right" for="s-3"></label>
+                        <label class="s-nav-3 left" for="s-2"></label>
+                        <label class="s-nav-3 right" for="s-1"></label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-xs-12">
+                
+                <section id="info" class="row">
+
+                    <div id="num" class="col-xs-4">
+                        
+                        <p><span class="icon-whatsapp"> </span> +56 9 9876 5431</p>
+                    </div>
+                        
+                    <div id="slogan" class="col-xs-4">
+                        <p>Rescate y adopción de perros callejeros</p>
+                    </div>
+                        
+                    <div id="redes" class="col-xs-12 col-sm-4">
+                        <a class="link icon" target="_blank" href="http://facebook.com/"><span class="icon-facebook-with-circle"></span></a>
+                        <a class="link icon" target="_blank" href="https://plus.google.com/"><span class="icon-google-plus"></span></a>
+                        <a class="link icon" target="_blank" href="https://instagram.com/"><span class="icon-instagram-with-circle"></span></a>
+                        <a class="link icon" target="_blank" href="http://gmail.com/"><span class="icon-mail"></span></a>
+                    </div>
+        
+                </section>
+
+            </div>
+
+        </section>
+
+        <article id="main" class="row">
+
+            <div id="izquierda" class="col-xs-12 col-md-6">
+                <h1 id="header1">RESCATE</h1>
+                <p id="sub1">ETAPA UNO</p>
+                <p id="separador1">______</p>
+                <br>
+                <p id="text1">Rescatamos perros en situación de peligro y/o abandono. Los rehabilitamos y los preparamos
+                    para buscarles un hogar.
+                </p>
+                <br>
+                <img id="rescate" src="{% static 'img/rescate.jpg' %}" alt="rescate">
+            </div>
+
+            <div id="derecha" class="col-xs-12 col-md-6">
+                <img id="crowdfunding" src="{% static 'img/crowfunding.jpg' %}" alt="crowdfunding">
+                <br>
+                <h1 id="header2">CROWDFUNDING</h1>
+                <p id="sub2">FINANCIAMIENTO</p>
+                <p id="separador2"><b>______</b></p>
+                <br>
+                <p id="text2">Sigue nuestras redes sociales para informarte acerca de las diversas campañas y actividades
+                    que realizamos para obtener financiamiento para seguir ayudando.
+                </p>
+                <br>
+                <button id="camp">CAMPAÑAS</button>
+                <a href="{% url 'perros' %}"><button id="adop">ADOPTAR</button></a>  
+            </div>
+
+        </article>
+
+        <div id="imagenes" class="row">
+
+            <div class="col-xs-12">
+                <h2>Perris rescatados:</h2>
+            </div>
+
+            {% for form in forms %}
+
+                {% if form.nombre == 'Oso' %}
+                <div class="col-xs-6 col-md-1 perrito">
+                    <a id="perrolink" href="{{form.imagen.url}}" data-fancybox="galeria" data-caption={{form.descripcion}}>
+                        <img class="dog" src="{{form.thumbnail.url}}" alt="Oso" />
+                    </a>
+                </div>
+                {% endif %}
+                 
+                {% if form.nombre == 'Chocolate' %}
+                <div class="col-xs-6 col-md-1 perrito">
+                    <a id="perrolink" href="{{form.imagen.url}}" data-fancybox="galeria" data-caption="Chocolate está siempre listo para jugar. Es grande y fuerte, por lo que le encanta correr.">
+                        <img class="dog" src="{{form.thumbnail.url}}" alt="Chocolate" />
+                    </a>
+                </div>
+                {% endif %}
+
+                {% if form.nombre == 'Bigotes' %}
+                <div class="col-xs-6 col-md-1 perrito">
+                    <a id="perrolink" href="{{form.imagen.url}}" data-fancybox="galeria" data-caption="Bigotes es inocente pero travieso. Le encantan los juguetes y que le rasquen la melena.">
+                        <img class="dog" src="{{form.thumbnail.url}}" alt="Bigotes" />
+                    </a>
+                </div>
+                {% endif %}
+                
+                {% if form.nombre == 'Luna' %}
+                <div class="col-xs-6 col-md-1 perrito">
+                    <a id="perrolink" href="{{form.imagen.url}}" data-fancybox="galeria" data-caption="Luna es una cachorrita esperando ser querida. Al ser nueva tiene mucho que aprender y está llena de amor para entregar.">
+                        <img class="dog" src="{{form.thumbnail.url}}" alt="Luna" />
+                    </a>
+                </div>
+                {% endif %}
+                
+                {% if form.nombre == 'Maya' %}
+                <div class="col-xs-6 col-md-1 perrito">    
+                    <a id="perrolink" href="{{form.imagen.url}}" data-fancybox="galeria" data-caption="Aunque es joven, Maya es muy astuta. A pesar de su mirada perdida, sabe lo que quiere y lo consigue.">
+                        <img class="dog" src="{{form.thumbnail.url}}" alt="Maya" />
+                    </a>
+                </div>
+                {% endif %}
+                
+                {% if form.nombre == 'Pexel' %}
+                <div class="col-xs-6 col-md-1 perrito">        
+                    <a id="perrolink" href="{{form.imagen.url}}" data-fancybox="galeria" data-caption="Pexel es un hermoso can al que le encanta que le acaricien. Sus pelaje suave se siente muy bien al tacto.">
+                        <img class="dog" src="{{form.thumbnail.url}}" alt="Pexel" />
+                    </a>
+                </div>
+                {% endif %}
+                
+                {% if form.nombre == 'Wifi' %}
+                <div class="col-xs-6 col-md-1 perrito">        
+                    <a id="perrolink" href="{{form.imagen.url}}" data-fancybox="galeria" data-caption="Wifi es observador y perspicaz. Le encanta jugar con otros perros y sobretodo con sus dueños.">
+                        <img class="dog" src="{{form.thumbnail.url}}" alt="Wifi" />
+                    </a>
+                </div>
+                {% endif %}
+
+            {% endfor %}
+
+        </div>
+
+        <footer class="row">
+            <div class="col-xs-12">
+                <section>
+                    <p id="foot">Desarrollo web y mobile</p>
+                </section>
+            </div>
+        </footer>
+
+    </section>
+
+</body>
+
+</html>

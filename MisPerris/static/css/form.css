@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f4f4;
+}
+
+header {
+    background-color: #85D4B7;
+    box-shadow: 2px 2px 20px #0000001c;
+    margin-bottom: 10vh;
+}
+
+#logo {
+    padding-top: 4vh;
+    width: 30%;
+    height: auto;
+    padding-bottom: 4vh;
+    display: block;
+    margin: auto;
+}
+
+.titulo {
+    color: #252525;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.main {
+    border-top: 10vh solid #85D4B7;
+    background-color: #ffffff;
+    width: 50%;
+    height: auto;
+    padding: 30px;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    box-shadow: 0px 0px 40px #00000017;
+    margin-bottom: 10vh;
+    transition: all .3s ease;
+}
+.main:hover {
+    box-shadow: 0px 0px 30px #0000003b;
+}
+
+form {
+    padding-top: 10vh;
+    padding-bottom: 2vh;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 5vh;
+}
+
+label {
+    color: #252525;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select{
+    font-family: "Roboto", Arial;
+    font-size: 16px;
+    color: #85D4B7;
+    width: 100%;
+    outline: none;
+    padding: 15px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #85D4B7;
+    transition: all .3s ease;
+}
+
+input[type="text"]:active,
+input[type="email"]:active,
+input[type="date"]:active,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+select{
+    color: #42a884;
+    border-bottom: 2px solid #42a884;
+}
+
+input[type="submit"] {
+    background: #42a884;
+    border-radius: 1px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Roboto", Arial;
+    font-size: 16px;
+    padding: 15px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: #66bea1;
+}
+
+.volver {
+    padding-top: 3vh;
+    background: #e94c4c;
+    border-radius: 1px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Roboto", Arial;
+    font-size: 16px;
+    padding: 15px;
+    width: 40%;
+    transition: all 0.3s ease;
+}
+
+.volver:hover {
+    background: #fd6060;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        background-color: #fff;
+    }
+    header {
+        background-color: #85D4B7;
+        box-shadow: none;
+        margin-bottom: 0;
+    }
+    .main {
+        border: none;
+        width: 90vw;
+        height: auto;
+        margin-bottom: 0;
+        box-shadow: none;
+    }
+    .main:hover {
+        box-shadow: none;
+    }
+    #logo {
+        width: 80%;
+        height: auto;
+    }
+}
